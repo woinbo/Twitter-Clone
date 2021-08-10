@@ -1,4 +1,8 @@
 extends layouts/main-layout.pug
 
-block content
-    h1 Welcome to my page!
+block content    
+    +createPostForm(userLoggedIn)
+    .postsContainer
+
+block scripts
+    script(src="/js/home.js")
